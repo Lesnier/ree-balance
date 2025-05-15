@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input DateRangeInput {
+  endDate: String!
+  startDate: String!
+}
+
+type EnergyModel {
+  category: String!
+  datetime: String!
+  subcategory: String!
+  value: Float!
+}
+
+type Query {
+  getEnergyByDateRange(range: DateRangeInput!): [EnergyModel!]!
+}
