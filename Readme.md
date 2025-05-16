@@ -45,3 +45,11 @@ Se ha seleccionado para mostrar los datos de la generación de energía renovabl
 
 
 ![alt text](https://github.com/Lesnier/ree-balance/blob/main/img.jpg?raw=true)
+
+
+**3-** Para ejecutar las pruebas unitarias:
+```
+npm run test
+```
+
+![alt text](https://github.com/Lesnier/ree-balance/blob/main/test.jpg?raw=true)
