@@ -1,13 +1,15 @@
-version: '3.8'
 
 services:
   mongo:
-    image: mongo
+    image: mongo:latest
+    container_name: mongo-server
+    restart: always
     ports:
       - "27017:27017"
     volumes:
       - mongodb:/data/db
-
+    networks:
+      - mongodb_network
   backend:
     build: ./backend
     ports:
@@ -16,13 +18,17 @@ services:
       - MONGO_URI=mongodb://mongo:27017/energydb
     depends_on:
       - mongo
-
+    networks:
+      - mongodb_network
   frontend:
     build: ./frontend
     ports:
       - "3001:80"  # Cambia a 80 si usas nginx
     depends_on:
       - backend
-
+    networks:
+      - mongodb_network
 volumes:
   mongodb:
+networks:
+  mongodb_network:

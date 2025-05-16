@@ -1,5 +1,5 @@
 # Usa Node.js LTS
-FROM node:18
+FROM node:22.14.0
 
 # Crea el directorio de trabajo
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar el backend
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]

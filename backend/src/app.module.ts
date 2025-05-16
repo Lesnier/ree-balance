@@ -26,7 +26,7 @@ import {EnergyModel} from "./energy/models/energy.model";
     driver: ApolloDriver,
     autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     sortSchema: true,
-  }), MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://mongo:27017/energydb'), EnergyModel],
+  }), MongooseModule.forRoot(process.env.MONGO_URI || 'localhost://mongo:27017/energydb'), EnergyModel],
   controllers: [AppController],
   providers: [AppService],
 })
