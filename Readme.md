@@ -32,3 +32,6 @@ Cada una hora se ejecuta un proceso, el mismo proceso de forma interna. Pero con
 http://localhost:3001
 ```
 Se ha seleccionado para mostrar los datos de la generación de energía renovable Hidráulica y como datos de demanda consumo de Demanda en B.C.
+
+
+![alt text](https://github.com/Lesnier/ree-balance/blob/main/img.jpg?raw=true)
