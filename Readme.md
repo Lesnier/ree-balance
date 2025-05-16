@@ -4,6 +4,16 @@ Construir un sistema Fullstack que obtenga datos en tiempo real desde la API pú
 
 El sistema debe estar **contenedorizado con Docker** y contar con **testing y documentación adecuados**.
 
+🔌 Data Source and API
+Usar el siguiente endpoint público de REE:
+📍 https://apidatos.ree.es/es/datos/balance/balance-electrico
+Este endpoint proporciona información del balance eléctrico nacional: generación, demanda, importaciones/exportaciones, etc.
+Tu backend debe:
+•	Consultar la API de forma periódica.
+•	Almacenar los datos en MongoDB.
+•	Exponer la información mediante una API GraphQL para que el frontend la consuma.
+
+
 # Estructura
 
 /ree-balance
