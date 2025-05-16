@@ -6,15 +6,13 @@ El sistema debe estar **contenedorizado con Docker** y contar con **testing y do
 
 # Estructura
 
-/ree-energy-balance
-│
-├── **backend/**            -> Nest.js + MongoDB + GraphQL + Docker
-│
-├── **frontend/**           -> React + Apollo Client + Charts + Docker
-│
-├── **docker-compose.yml**  -> Orquestación de backend + frontend + MongoDB
-│
-└── **README.md**           -> Documentación completa
+/ree-balance
+```mermaid
+graph LR
+A[Backend] --> B[Nest.js + MongoDB + GraphQL + Docker]
+C[Frontend] --> D[React + Apollo Client + Charts + Docker]
+E[docker-compose.yml] --> F[Orquestación de backend + frontend + MongoDB]
+```
 
 
 ## Como Iniciar
